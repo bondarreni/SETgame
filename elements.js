@@ -33,7 +33,7 @@ class Card {
         this.shape = shape;
 
         this.image = new Image(200, 130)   //ha nincs szélesség, magasság, akkor az eredeti méret
-        this.image.src = "./icons/" + number + filling + color + shape + ".png"
+        this.image.src = "icons/" + number + filling + color + shape + ".png"
     }
 }
 
