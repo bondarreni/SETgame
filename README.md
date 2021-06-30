@@ -1,16 +1,6 @@
 Bondár Reni
 KCPG6X
-Webprogramozás - számonkérés
-Ezt a megoldást a fent írt hallgató küldte be és készítette a Webprogramozás kurzus számonkéréséhez.
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől 
-származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé. 
-Az Eötvös Loránd Tudományegyetem Hallgatói Követelményrendszere 
-(ELTE szervezeti és működési szabályzata, II. Kötet, 74/C. §) kimondja, hogy mindaddig, 
-amíg egy hallgató egy másik hallgató munkáját - vagy legalábbis annak jelentős részét - 
-saját munkájaként mutatja be, az fegyelmi vétségnek számít. 
-A fegyelmi vétség legsúlyosabb következménye a hallgató elbocsátása az egyetemről.
 
-Minimálisan teljesítendő (6 pont)
 
 - [X] A "További elvárások" részben szereplő `README.md` fájl megfelelően kitöltve szerepel a feltöltött csomagban (0 pont)
 - [X] A játékoldal megjelenik. (0 pont)
@@ -22,7 +12,7 @@ Minimálisan teljesítendő (6 pont)
 - [X] Mindez addig tart, amíg el nem fogy a pakli. (0,5 pont)
 - [X] Ha nincs SET a leosztásban, akkor véget ér a játék. (0,5 pont)
 
-Az alap feladatok (14 pont)
+
 
 - [X] A játék nyitólapjáról elérhető a játék leírása (0,5 pont)
 - [X] A játék nyitólapján megjelennek az alap beállítási lehetőségek: játékosok, mód, egyéb (0,5 pont)
@@ -43,7 +33,7 @@ Az alap feladatok (14 pont)
 - [X] Nincs nagyobb programhiba, nem csalhatók elő furcsa jelenségek (0,5 pont)
 - [X] Igényes kialakítás (1 pont)
 
-Plusz feladatok (plusz 5 pont)
+
 
 - [X] A játék nyitólapján a játék nehézsége kiválasztható (3 vagy 4 tulajdonság = 27/81 kártyalap) (0,5 pont)
 - [X] Lehet 4 tulajdonsággal játszani. (1 pont)
