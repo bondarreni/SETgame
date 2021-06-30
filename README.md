@@ -1,5 +1,5 @@
 Bondár Reni
-KCPG6X
+
 
 
 - [X] A "További elvárások" részben szereplő `README.md` fájl megfelelően kitöltve szerepel a feltöltött csomagban (0 pont)
