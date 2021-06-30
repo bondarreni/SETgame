@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <div id="open" style="display: block;"> 
+        <h1>SET GAME</h1>
+
+        <div id="szabalyDiv">
+            <button id="szabalyGomb">Játékszabály</button><br><br>
+            <button id="topListaGomb">Toplista</button>
+        </div>
+
+        <div id="data" style="display: block;">
+
+            <h2>Játékosok</h2>
+            <button id="add">+</button>
+            <button id="remove">-</button>
+            <br><br>
+            <div id="playerInputs"©>
+                <input type="text" value="Játékos1" placeholder="Játékos1">
+            </div>
+            <br>
+
+            <h2>Nehézség</h2>
+            <div class="radio-toolbar">
+                <input type="radio" id="radioEasy" name="radioLevel" value="easy">
+                <label for="radioEasy">Kezdő</label>
+            
+                <input type="radio" id="radioHard" name="radioLevel" value="hard" checked>
+                <label for="radioHard">Haladó</label>
+            </div>
+
+
+            <h2>Játékmód</h2>
+            <div class="radio-toolbar">
+                <input type="radio" id="radioGyakorlo" name="radioMode" value="gyakorlo" checked>
+                <label for="radioGyakorlo">Gyakorló</label>
+            
+                <input type="radio" id="radioVerseny" name="radioMode" value="verseny">
+                <label for="radioVerseny">Verseny</label>
+            </div>
+
+            <div id="egyeb" style="display: block;">
+                <br>
+                <h2>Egyéb beállítások</h2>
+                <span>Van-e SET a leosztásban gomb: </span>
+                <div class="egyeb-radio">
+                    <input type="radio" id="elsoVan" name="elso" value="van" checked>
+                    <label for="elsoVan">Van</label>
+            
+                    <input type="radio" id="elsoNincs" name="elso" value="nincs">
+                    <label for="elsoNincs">Nincs</label>
+                </div>
+                <span>SET mutatása gomb: </span>
+                <div class="egyeb-radio">
+                    <input type="radio" id="masodikVan" name="masodik" value="van" checked>
+                    <label for="masodikVan">Van</label>
+            
+                    <input type="radio" id="masodikNincs" name="masodik" value="nincs">
+                    <label for="masodikNincs">Nincs</label>
+                </div>
+                <span>Kiegészítés három lappal: </span>
+                <div class="egyeb-radio">
+                    <input type="radio" id="harmadikGomb" name="harmadik" value="gomb" checked>
+                    <label for="harmadikGomb">Gombbal</label>
+            
+                    <input type="radio" id="harmadikAuto" name="harmadik" value="auto">
+                    <label for="harmadikAuto">Automatikusan</label>
+                </div>
+
+            </div>
+            <br>
+
+
+
+            <button id="startButton">Start</button>
+        </div>
+
+
+
+
+        <div id="instructions" style="display: none;">
+            <h2>Játékszabály</h2>
+            <p>A játék célja hogy 3 kártyából álló SET-eket találjunk meg az asztalra lehelyezett 12 kártyából.
+            Minden kártyának 4 tulajdonsága van, amik a következők:</p>
+            <p><b>FORMA:</b> ovális, hullámos, rombusz</p>
+            <p><b>SZÍN:</b> piros, zöld, lila</p>
+            <p><b>SZÁM:</b> 1, 2 vagy 3 forma</p>
+            <p><b>TARTALOM:</b> tömör, csíkos, üres</p>
+            <p>Egy SET 3 kártyából áll, amiben minden jellemzőt külön
+                megvizsgálva, azoknak vagy azonosnak vagy minden
+                kártyán különbözőnek kell lennie. Ennek a szabálynak
+                MINDEN tulajdonság esetében meg kell felelnie a
+                kiválasztott három lapnak. Más szavakkal: a forma vagy
+                azononos mindhárom kártyán, vagy mindegyiken más; a
+                szín vagy azonos mindhárom kártyán, vagy mindegyiken
+                különböző, stb...</p>
+            <p>Ha a lapokon egy tulajdonságot vizsgálva 2 azonos és 1
+                különböző típus látható, akkor az nem SET. Például, ha 2
+                lap piros, 1 pedig lila, akkor az nem SET. Egy SET esetében
+                vagy mindhárom kártyán azonos az adott tulajdonság, vagy
+                laponként különböző.</p>
+
+            <h2>Játék menete</h2>
+            <p>Az osztó összekeveri a kártyákat és 12 lapot képpel
+                felfelé téglalap formában lehelyez az asztalra, úgy hogy
+                mindenki jól lássa őket. A játékosok bármelyik felfedett
+                kártyát levehetik, ha az SET-et képez. Ha valóban SET, akkor a játékos
+                megkapja a 3 lapot, amely 1 pontot ér, az osztó pedig 3
+                újabb lapot oszt a felvettek helyére. Mielőtt felvennénk a
+                kártyákat, SET-et kell bemondanunk. </p>
+            <p>Hogyan is zajlik a játék: Nincsenek körök, az első játékos,
+                aki SET-et kiált, veszi át az irányítást. Miután SETet mondott, senki más nem vehet le kártyákat, csak ő,
+                egész addig amíg a megtalált SET lapjait fel nem veszi.
+                A SET-et a bemondást követő 10 másodpercen belül
+                azonnal fel kell venni. Ha a bemondónak mégsincs SETje, vagy a kiválasztott SET hibás, akkor veszít 1 pontot
+                és a hibásan felvett kártyák visszakerülnek a helyükre.
+                Amennyiben a kivett lapok valóban SET-et alkotnak,
+                akkor a SET levétele után újabb lapokkal egészítjük
+                ki 12-re a felcsapott lapokat. Ezután minden játékos
+                azonnal keresi az új SET-eket a felcsapott lapok között.
+                Speciális eset: Ha nincs már levehető
+                SET a fent lévő 12 lapban, akkor 3 plusz lap kerül az asztalra.
+                Amennyiben a 15 lapban sikerül SET-et találni, akkor nem
+                kerül pótlásra a 3 lap, ezáltal újra 12 lap lesz lent az asztalon.</p>
+
+               <p>A játék addig tart, amíg elfogy a pakli, és az asztalon lévő
+                lapokból már nem lehet SET-et létrehozni. A játék végén
+                előfordulhat, hogy maradnak lapok az asztalon, melyekből
+                már nem lehet SET-et létrehozni. Ekkor megszámoljuk,
+                kinek hány SET-je van. Minden SET 1 pontot ér. A legtöbb
+                pontot (SET-et) gyűjtő játékos nyer.</p>
+
+                <p><b>Egyszemélyes játékmód:</b> Kezdetnek ugyanúgy 12 lapot
+                csapunk fel, mint több játékos esetén. Minden megtalált
+                SET egy pontot ér. Ha nem találunk SET-et, akkor 3 új
+                lapot teszünk ki, de egy SET értékét levonunk a végső
+                pontszámból. Hogy megnyerjük a játékot, az utolsó 12
+                lapban is kell SET-et találnunk.</p>
+            
+        </div>
+
+
+        <div id="topListDiv" style="display: none;">
+            <h2>Legjobb egyszemélyes kezdő versenyek</h2>
+            <ul id="kezdoTop">
+            </ul>
+            
+            <h2>Legjobb egyszemélyes haladó versenyek</h2>
+            <ul id="haladoTop">
+            </ul>
+
+            <h2>Utolsó 10 többjátékos eredmény</h2>
+            <ul id="tobbjatekos">
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div id="game" style="display: none">
+        <div id="playerDiv">  
+        </div>
+
+        <div id="progressDiv" style="visibility: hidden;">
+            <progress max="10", value="0" id="pbar"></progress>
+        </div>
+
+        <table class="cardTable"></table>
+
+        <div id="extraButtons">  
+            <button class="extraBtn" id="isSet">Van SET?</button><br><br>
+            <button class="extraBtn" id="showSet">Mutass egy SET-et!</button><br><br>
+            <button class="extraBtn" id="plusCards">Plusz 3 lap</button><br><br>
+        </div>
+
+    </div>
+
+    
+    <div id="gameOverDiv" style="display: none;">
+        <h2>Játék vége</h2>
+        <div id="placesDiv"></div>
+        <button id="backToOpen">Kezdőlap</button><br><br>
+        <button id="newGame" style="display: inline;">Új játék</button>
+    </div>
+
+
+
+    <script src = "input.js" ></script>
+    <script src = "top.js" ></script>
+    <script src = "elements.js" ></script>
+    <script src = "main.js" ></script>
+
+</body>
+
+</html>
+
